@@ -1,0 +1,4 @@
+
+Modifier	Description
+abstract	Can only be used in an abstract class, and can only be used on methods. 
+            The method does not have a body, for example abstract void run();. The body is provided by the subclass (inherited from). You will learn more about inheritance and abstraction in the Inheritance and Abstraction chapters
