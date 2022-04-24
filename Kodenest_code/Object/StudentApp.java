@@ -25,6 +25,6 @@ class studentApp {
         s1.eat();
         s2.sleep();
         s3.study();
-        // new.student().study();
+        new student().study();
     }
 }
