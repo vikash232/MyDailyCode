@@ -11,6 +11,12 @@ public class Array {
             System.out.println("Enter marks of student" + i);
             arr[i] = scan.nextInt();
         }
+        /*
+         * In above for loop i have added
+         * hardcoded value that how many times my loops should
+         * run it is good practice it should run according
+         * to our no. of content
+         */
 
         System.out.println("Array Contents are");
         for (int i = 0; i <= 4; i++) {
