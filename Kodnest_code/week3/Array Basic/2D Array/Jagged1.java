@@ -19,7 +19,7 @@ public class Jagged1 {
         }
         for (i = 0; i <= arr.length - 1; i++) {
             for (j = 0; j <= arr[i].length - 1; j++) {
-                System.out.println(arr[i][j] + " ");
+                System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
