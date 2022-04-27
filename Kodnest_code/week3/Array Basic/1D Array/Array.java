@@ -1,7 +1,12 @@
 import java.util.Scanner;
 
-// Write a java program to take 5 students marks as input from the keyboard and store it in an array.
-
+/* Write a java program to take 5 students marks as input from the keyboard and store it in an array.
+0
+1
+2
+3
+4
+*/
 public class Array {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
