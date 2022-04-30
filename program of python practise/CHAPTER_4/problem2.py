@@ -8,6 +8,6 @@ m5 = int(input("Enter Marks for Student Number 5:- "))
 m6 = int(input("Enter Marks for Student Number 6:- "))
 m7 = int(input("Enter Marks for Student Number 7:- "))
 
-myList = [m1 , m2 , m3 , m4 , m5 , m6 , m7 ]
+myList = [m1, m2, m3, m4, m5, m6, m7]
 myList.sort()
 print(myList)

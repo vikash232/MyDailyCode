@@ -8,39 +8,13 @@ myDict = {
     "kela": "banana",
     "khana": "food"
 }
-print("the options are:-", myDict.keys()) #here myDict.keys() will show the options
+# here myDict.keys() will show the options
+print("the options are:-", myDict.keys())
 a = input("enter you choice :- \n")
 #print("meaning of your choice is", myDict[a])
 
-# Below line will not throw an error if the key is not present in the dictionary 
+# Below line will not throw an error if the key is not present in the dictionary
 print("The meaning of your word is :", myDict.get(a))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # myDict = {

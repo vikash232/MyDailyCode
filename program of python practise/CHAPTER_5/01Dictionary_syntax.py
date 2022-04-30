@@ -10,4 +10,3 @@ myDict = {
 myDict['Marks'] = [45, 64]
 print(myDict['Marks'])
 print(myDict['anotherdict']['harry'])
-
