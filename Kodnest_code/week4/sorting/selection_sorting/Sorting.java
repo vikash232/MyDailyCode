@@ -43,9 +43,9 @@ class SortingApp {
         }
         System.out.println();
 
-        Sorting $ = new Sorting();
+        Sorting s = new Sorting();
 
-    $.selectionSort(arr[]);
+    s.selectionSort(arr[]);
         System.out.println("Array Contents After sorting");
         for( int i=0; i<=arr.length-1;i++);
             System.out.println(arr[i]+ " ");
