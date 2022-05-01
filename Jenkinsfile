@@ -19,7 +19,7 @@ pipeline{
     } 
     environment {
         dockerImage = ''
-        registry    = 'amitsharma17133129/apache-app-citymall'
+        registry    = 'vikash232/apache-app-citymall'
         registryCredential = 'docker_hub_cred'
     }
     stages{
@@ -30,7 +30,7 @@ pipeline{
                     branches: [[name: '*/${branch_name}']], 
                     extensions: [], 
                     userRemoteConfigs: [[
-                        url: 'https://github.com/amit17133129/Build-Deploy-Apps-Jenkins-K8s-Docker.git'
+                        url: 'https://github.com/vikash232/MyDailyCode.git'
                         ]]
                     ]
                 )

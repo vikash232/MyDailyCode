@@ -1,4 +1,0 @@
-fruits = ["Banana", "Watermelon", "Grapes", "Mangoes"]
-#i = 0
-for item in fruits:
-    print(item)

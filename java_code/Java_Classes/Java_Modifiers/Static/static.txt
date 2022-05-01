@@ -1,3 +1,0 @@
-Modifier	Description
-
-static	Attributes and methods belongs to the class, rather than an object
