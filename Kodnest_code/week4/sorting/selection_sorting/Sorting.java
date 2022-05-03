@@ -45,7 +45,7 @@ class SortingApp {
 
         Sorting s = new Sorting();
 
-    s.selectionSort(arr[]);
+         s.selectionSortrr[]);
         System.out.println("Array Contents After sorting");
         for( int i=0; i<=arr.length-1;i++);
             System.out.println(arr[i]+ " ");

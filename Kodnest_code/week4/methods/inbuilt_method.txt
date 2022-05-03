@@ -1,0 +1,28 @@
+equals() - used to campare two strings
+
+equalsIgnoreCase() - used to compare two 
+                    strings by ignoring the equalsIgnoreCase
+
+compareTo() - used to compare two strings           
+                character by character
+
+intern() - used to bring copy of string from
+            non-constant pool to constant pool
+
+toUpperCase() - used to convert a string to
+                upper case 
+            
+toLowerCase() - used to convert all characters of
+                string to lower case 
+
+contains() - used to check whether a string contains
+            a substring or not 
+
+indexOf() - used to get the index of particular
+            character
+        
+charAt() - used to get the character at the 
+        specified index
+
+subString() - used to get the substring of the
+            given string
