@@ -1,3 +1,5 @@
+// reverse the string
+
 import java.util.Scanner;
 
 class Demo5 {
