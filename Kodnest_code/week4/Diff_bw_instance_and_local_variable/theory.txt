@@ -1,0 +1,14 @@
+Instance Variable                   Local Variable
+
+1. These are such Variable        1. These are such variable   
+which are present inside the        which are present inside the 
+class but outside the method.       method.
+
+2. These variables will get the   2. These variables will get the 
+memory inside the instance or       memory in the activation 
+object.                             record in the stack.
+
+3. These variables  will get the  3. These variables will get the    
+memory at the time of               memory when the method is
+instantiation(Object creation)      called inside the activation
+                                    record.
