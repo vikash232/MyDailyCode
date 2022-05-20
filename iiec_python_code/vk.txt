@@ -1,0 +1,30 @@
+import speech_recognition as sr
+import webbrowser
+import pyttsx3
+
+pyttsx3.speak("Hello vikash welcome to my tools")
+print("welcome to my tools\n\n")
+
+pyttsx3.speak("Enter your requirements .. I am listening to you....")
+print("Enter your requirements .. we r listening ....", end="")
+r = sr.Recognizer()
+
+with sr.Microphone() as source:
+ pyttsx3.speak("start saying")
+ print("start saying ..")
+ audio = r.listen(source)
+ pyttsx3.speak("we got it , plz wait ...")
+ print("we got it , Please wait ...")
+
+ch = r.recognize_google(audio)
+print(ch)
+
+if (("date" in ch)) and (("run" in ch) or ("execute" in ch)):
+ pyttsx3.speak("showing date to you")
+ webbrowser.open("http://192.168.56.103/cgi-bin//iiec.py?x=date")
+elif ("calender" in ch):
+ pyttsx3.speak("showing cal to you")
+ webbrowser.open("http://192.168.56.103/cgi-bin/iiec.py?x=cal")
+else:
+ pyttsx3.speak("Not understand")
+ print("not understand")

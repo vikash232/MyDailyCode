@@ -1,0 +1,446 @@
+1.
+Q.Where is the 'center of gravity' in the new computing model?
+= Public Cloud
+
+Q.What caused a large push to the public cloud?
+= Speed a Deployment
+
+Q.As applications move to the cloud, their proximity to the Internet is:
+= Closer
+
+Q.What are common challenges in the cloud?
+= Lack of reference architecture
+  Lack of visibility and troubleshooting
+  Multi-cloud Support
+  
+Q.How does Aviatrix help customers in public clouds?
+= Aviatrix is a multi-cloud platform that brings a consistent architecture with Day 2 Operations and Visibility
+
+Q.Which group led the initial charge in the cloud?
+= DevOps
+
+Q.True or false: When things break, DevOps teams can troubleshoot their own network connectivity without needing networking teams for support.
+= False
+
+Q.Which unique challenge does a network engineer face in the cloud that isn't present on-perm?
+= Accounts/Subscriptions
+
+Q.When organizations build in the cloud, the providers typically follow what model:
+= Build it yourself - we provide the pieces
+
+Q.True or false: Cloud providers can easily help customers in multi-cloud deployments.
+= False
+======================================================================================================================================
+2.
+Q.What is the definition of a PaaS Service?
+= You as the customer manage just the application and data
+
+Q.What is a hybrid cloud?
+= A combination of Public and Private Cloud
+
+Q.Which is NOT a valid component of the cloud?
+= Geographical Zone
+
+Q.Is Availability Zone 1A the same for every customer in cloud environments?
+= No
+
+Q.True or false: We have an architectural gap in cloud today because there is no consistent framework for network and security across clouds.
+= True
+
+Q.The On-Prem world is most similar to which type of service:
+= IaaS
+
+Q.Office365 is an example of which service:
+= SaaS
+
+Q.True or false: A region is the same thing as a data center for cloud providers.
+= False
+
+Q.True or false: When a cloud provider deploys a region, there are always multiple availability zones present
+= False
+
+Q.One advantage of availability zones includes:
+= Resources across AZs can survive a data center outage
+======================================================================================================================================
+3.
+Q.Which AWS service represents a virtual machine?
+= EC2
+
+Q.True or false: To connect a VPC, AWS uses an implicit router that customers must configure to allow communication between VPCs.
+= False
+
+Q.Which AWS service best represents your private virtual walled garden in the cloud?
+= VPC
+
+Q.True or false: In AWS, subnets are global resources spread across availability zones.
+= False
+
+Q.Which AWS security component is a stateless filter?
+= NACL
+
+Q.True or false: Security Groups in AWS can not be shared across VPCs unless they are peered together.
+= True
+
+Q.Which gateway is not an available option with AWS?
+= Virtual Network Gateway
+
+Q.True or false: Transit Gateway in AWS fully automates routing so that no manual configuration is required.
+= False
+
+Q.In AWS, a Direct Connect circuit can terminate on which of the following:
+= Direct Connect Gateway
+
+Q.Using native AWS constructs, the highest available bandwidth within an IPSEC tunnel is:
+= 1.25Gbps
+
+Q.True or false: There are currently no limitations to the number of routes supported in AWS Transit Gateway.
+= False
+======================================================================================================================================
+4.
+Q.What is different about Availability Zones in Azure than other clouds?
+= Azure only supports Availability Zones in certain regions
+
+Q.What are Virtual Network Gateways used for?
+= Hybrid Connectivity termination constructs for VPN or Express route
+
+Q.Which Azure component groups items together for better organization control of a specific workload?
+= Resource Group
+
+Q.What is the top level organizational structure in Azure?
+= AD Tenant
+
+Q.True or false: In Azure, subnets are created as either private or public.
+= False
+
+Q.Some challenges with Azure Virtual WAN as a platform include:
+= Does not provide encryption within the cloud
+  Does not provide a multi-cloud architecture
+  No 3rd party devices supported in the HUB
+
+Q.An ExpressRoute circuit in Azure can terminate on which device (select all that apply)
+= ExpressRoute Gateway
+  Virtual Network Gateway
+
+Q.True or false: Using ExpressRoute hairpinning for spoke to spoke traffic is the recommended option for transit within Azure.
+= False
+
+Q.What is an NVA in Azure (select all that apply)
+= Any 3rd party device in the Azure marketplace
+  Network Virtual Appliance
+
+Q.Challenges with using an NVA to provide spoke to spoke communication in Azure include: (select all that apply)
+= User Defined Route Management at scale
+  SNAT required for traffic symmetry
+======================================================================================================================================
+5.
+Q.GCP private dedicated connectivity is referred to as
+= Cloud Interconnect
+
+Q.True or false: All resources within GCP are either Global or Regional or both.
+= False
+
+Q.A Virtual Machine is an example of a
+= Zonal Resource 
+
+Q.A VPC is an example of a:
+= Global Resource
+
+Q.For a single user, GCP resources are structurally organized in a:
+= Project
+
+Q.True or false: GCP encourages deployments of multiple VPCs to spread out all your workloads.
+= False
+
+Q.What does Auto Mode in GCP mean?
+= subnets are created in each region
+
+Q.True or false: GCP supports dynamic routes within the cloud.
+= True 
+
+Q.True or false: VPC peering in GCP allows VPC to be transitive.
+= False
+
+Q.A project can access another project's resource via (select all that apply)
+= Shared VPC
+  VPC Peering
+======================================================================================================================================
+6.
+Q.What are virtual cloud networks called in OCI?
+= VCN
+
+Q.True or false: OCI subnets are tied to Availability Domains.
+= False
+
+Q.How many DRGs can you have in an OCI Region?
+= 5
+
+Q.True or false: Overlapping IPs are allowed when peering VCNs in OCI.
+= False 
+
+Q.In OCI you need to specify a _____________ when creating resources.
+= Compartment ID
+
+Q.True or false: In OCI it's easy to have full visibility and control of the networks built there using the OCI Console.
+= False
+
+Q.The Oracle Azure networking partnership is available in all OCI and Azure regions.
+= False
+
+Q.Service Gateways provide _____________ access from VCNs to Oracle Services.
+= Private
+
+Q.Tenancy IAM metadata is bound to ___________________.
+= The home region
+
+Q.True or false: Using OCI native networking resources alone, it’s easy to scale and set up secure connections with other Cloud Service Providers.
+= False
+======================================================================================================================================
+7.
+Q.What are the main pillars of the MCNA?
+= Cloud core,Operations, and Access
+
+Q.True or false: Security and Visibility is inserted throughout the MCNA Architecture.
+= True
+
+Q.Which answer is a benefit of having a Multi-Cloud Network Architecture?
+= Normalized Data Plane
+  Centralized Control Plane
+  Repeatable across cloud proivders
+
+Q. Customer Challenges in cloud include:
+= Go Build
+  Vendor Lock In
+  Black Box
+
+Q.What is the most important aspect of any multi-cloud network?
+=  Transit 
+
+Q.The function of the cloud operations layer includes (select all that apply)
+= Multi-cloud Centralized Visibility
+  Multi-cloud Centralized Control
+   Multi-cloud Centralized Orchestration
+
+Q.The Cloud Core layer of the MCNA provides:
+= Normalized Data plane across clouds
+
+Q.True or false: With MCNA, security must be configured per cloud provider to maintain consistent governance.
+= False
+
+Q.Cloud Access in MCNA provides common access for:
+= SDWAN
+  Direct Connect options from cloud providers 
+  VPN connectivity
+
+Q.The core principal of MCNA is:
+= a multi-cloud network and security framework for consistent deployment across clouds
+
+======================================================================================================================================
+8.
+Q.Which best describes the Aviatrix Transit Solutions:
+= Built using Aviatrix IPSEC for encryption by default with  option for high performance
+ 
+Q.True or false: Aviatrix transit must be built out per cloud and does not support cross-cloud communication by default.
+= False
+
+Q.What is a challenge with native encryption within the cloud?
+= Cloud environments are not natively encrypted
+  Native encryption mechanisms are limited to 1.25G
+  IPSEC tunnels are tied to a single core within compute
+
+Q.What are the components within the Aviatrix Platform?
+= Controller
+  Gateways
+  CoPilot
+ 
+Q.Why is cloud IPSEC limited to 1.25G?
+= Native solutions build tunnels across a single core only
+
+Q.True or false: The Aviatrix FQDN Egress Filter supports both centralized and distributed egress methods.
+= True
+
+Q.True or false: Aviatrix can extend native AWS features like Guard Duty to provide enforcement of alerts.
+= True
+
+Q.The advantage of Aviatrix Transit within the cloud is:
+= End to End Encryption
+  Repeatable across Clouds
+  Complete Visibility and Control
+  
+Q.With Aviatrix HPE, customers can get:
+= Near line rate encryption within the cloud
+  Near line rate encryption b/w clouds
+  Near line rate encryption b/w on-prem and cloud
+
+Q.True or false: Aviatrix can provide filtering of partner route advertisements through a BGP Approval Process.
+= True
+======================================================================================================================================
+9.
+Q.What are some challenges with inserting firewalls in the cloud?
+= Repackaged Firewall Solution from on-prem world
+  Native Firewall Solution are primarily L4 firewalls
+  Customer required to configure and manage routing
+
+Q.How much throughput can Aviatrix achieve with Firenet?
+= Up to 70G
+
+Q.What advantages does the Aviatrix Site to Cloud offer?
+= Support for Network Address Translation (NAT)
+  Support for TCP and UDP tunnels
+  Uses a template driven manner for configuration
+
+Q.True or false: Aviatrix Firenet can orchestrate the firewall deployment, firewall routing, and VNET/VPC routing for NGFW insertion.
+= True
+
+Q.True or false: The Aviatrix User VPN solution does not allow profile based granular access control.
+= False
+
+Q.Which 3rd party integrations are available for Aviatrix User VPN?
+= DUO
+  Okta
+  AD
+  SAML
+
+Q.True or false: Aviatrix Firenet requires that customers use gateways in the spokes, as this is not supported using native constructs for transit (i.e. AWS TGW or Azure Peering).
+= False
+
+Q.Which Aviatrix feature allows customers to group VPC/VNETs with common security properties for access?
+= Security Domains
+
+Q.True or false: Aviatrix Site 2 Cloud can also be used to onboard IoT devices.
+= True
+
+Q.What problems does Aviatrix Private S3 solution solve for? (select all that apply)
+= Data exfiltration
+  Private access (RFC1918 only) to S3 buckets without the need of public address
+======================================================================================================================================
+10.
+Q.True or false: Aviatrix is a multi-cloud Terraform provider.
+= True
+
+Q.True or false: Aviatrix can not provide packet captures of live traffic.
+= False
+
+Q.True or false: The VPC tracker is only available for AWS.
+= False
+
+Q.What does Aviatrix use for Controller HA in AWS?
+= a Lambda script
+  an S3 bucket
+  an auto scaling group
+  
+Q.How does Flight Path help users troubleshoot connectivity problems?
+= 
+Q.What are some operational challenges that customers face in the cloud?
+= Tier-3 becomes Tier-1 troubleshooting
+  Limited visibility into native constructs
+  Lack of standard troubleshooting tools(ping,traceroute, etc.)
+
+Q.True or false: The Aviatrix controller can perform auditing of routing constructs. This ensures that no new routes have been added, that can affect end to end network correctness.
+= True
+
+Q.True or false: Common troubleshooting tasks like ping and traceroute can be run from any Aviatrix gateway.
+= True
+
+Q.What happens when the Aviatrix components require upgrades?
+= Upgrades are hitless
+
+Q.Which of the following statements is true?
+= Customers can spin up a single controller and on-board multiple cloud accounts for management
+======================================================================================================================================
+11.
+Q.True or false: CoPilot must be deployed per cloud to gain visibility across your multi-cloud network.
+= False
+
+Q.CoPilot topology can provide:
+= Customized Visibility Options
+  Custom tagging of resorces
+  Diagnostic functions from gateways
+
+Q.True or false: CoPilot doesn’t provide any geolocation features for data traffic.
+= False
+
+Q.Aviatrix FlowIQ provides:
+= Netflow data across the multi-cloud network for all traffic seen by gateways
+
+Q.True or false: Flow IQ will provide summarization of netflow data but for specific records we must perform tasks on the gateways.
+= True
+
+Q.True or false: Flow IQ will provide summarization of netflow data but for specific records we must perform tasks on the gateways.
+= Provides intelligent visibility into cloud networks through dynamic topology,netflow,troubleshooting and more 
+
+Q.True or false: CoPilot allows for custom filters to limit data to defined resources, applications, and flows.
+= True
+======================================================================================================================================
+12.
+Q.Which clouds can you deploy the Aviatrix controller in?
+= Azure
+  AWS
+  OCI
+
+Q.How many controllers do you normally need to run a multi-cloud environment consisting of OCI, Azure and GCP?
+= 1
+
+Q.What is the recommended or easiest way of deploying the Aviatrix controller in AWS?
+= CloudFormation template from docs.aviatrix.com
+
+Q.Can you deploy Avaiatrix Controller in your on-prem DC?
+= No
+======================================================================================================================================
+13.
+Q.
+Q.
+
+Q.
+Q.
+Q.
+Q.
+Q.
+Q.
+
+Q.
+Q.
+Q.
+
+Q.
+Q.
+
+Q.
+Q.
+Q.
+Q.
+
+Q.
+Q.
+Q.
+Q.
+Q.
+Q.
+
+Q.
+Q.
+
+Q.
+Q.
+
+Q.
+Q.
+Q.
+Q.
+
+Q.
+Q.
+
+Q.
+Q.
+Q.
+
+Q.
+Q.
+
+Q.
+
+Q.
+Q.
+Q.
+Q.
+Q.
