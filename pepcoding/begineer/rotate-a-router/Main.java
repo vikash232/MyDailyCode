@@ -29,7 +29,7 @@ public class Main {
             }
         }
 
-        int q = n / div;
+        int q = n / div;                                                                                                                                                                                                                                                                                        
         int r = n % div;
 
         int rot = r * mult + q;
