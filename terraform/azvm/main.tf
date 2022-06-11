@@ -1,0 +1,1 @@
+resource "azure_virtual_machine"
