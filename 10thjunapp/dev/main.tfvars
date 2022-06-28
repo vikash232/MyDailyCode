@@ -1,0 +1,6 @@
+rgname     = "kohlr"
+rglocation = "australiaeast"
+appsvcplan = "kohlrsvcplan"
+tier       = "Free"
+size       = "F1"
+appsvcname = "kohlraesvcname"
