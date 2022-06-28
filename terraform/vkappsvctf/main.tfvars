@@ -1,7 +1,0 @@
-name                  = "djsvcappname"
-rg_location           = "australiaeast"
-rg_name               = "djrg"
-tier                  = "Free"
-size                  = "F1"
-always_on             = "false"
-app_service_plan_kind = "Linux"

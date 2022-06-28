@@ -1,6 +1,0 @@
-rgname     = "kohlr1"
-rglocation = "australiaeast"
-appsvcplan = "kohlrsvcplan"
-tier       = "Free"
-size       = "F1"
-appsvcname = "kohlraesvcname"
