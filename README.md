@@ -1,3 +1,1 @@
-# MyDailyCode
-Here I will update my daily stuff.
-Mainly it contains java,DevOps, Python, Mern code.
+adding DevOps Scripts and code[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[D[Dalso adding DevOps Scripts and code
