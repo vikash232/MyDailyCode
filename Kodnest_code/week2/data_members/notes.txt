@@ -1,0 +1,33 @@
+Note:-
+
+Java follows the camel convention for writing names of
+classes, data memebers, memeber functions.
+
+According to the Camel convention, the naming should happen in the 
+following manner;
+
+i) class Name:
+        class Names should have every first letter
+        of each word in uppercase.
+        Ex:- Student, Fan, StudentApp, FanApp.
+
+ii) Data Members or Variables:
+        * if the data members name contains a single
+        word, then all the letters in the word should be in lowercase.
+
+        * if there are multiple words in the name than 
+        the first word, all letters should be in lowercase, followed by 
+        the remaining words having only the first letter
+        in uppercase and the other letters in lowercase.
+        Ex:- name, brand, age, gender, studentName, studentMark.
+
+iii) Member functions or methods:
+        * if the member functions name contains age
+        single word, then all the letters  in the word should be in
+        lowercase.
+
+        * if there are multiple words in the name than the first word,
+        all letters should be in lowercase, followed by the remaining
+        words having only the first letter in uppercase and other letters in 
+        lowercase.
+        Ex:- eat(), sleep(), study(), blowAir(), studentStudy().
