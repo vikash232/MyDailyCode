@@ -1,5 +1,15 @@
-// Examples of print the salary of 7 employees in array format
 
+// Examples of print the salary of 7 employees in array format
+/*
+  Scenario 2: Employees
+    0
+    1
+    2
+    3   "1-Dimensional Array"
+    4
+    5
+    6
+ */
 import java.util.Scanner;
 
 public class Salary {
