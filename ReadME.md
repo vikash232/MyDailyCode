@@ -1,2 +1,2 @@
-## MyDailyCode
-Here I will update my daily coding related stuff .
+# MyDailyCode
+It's about my daily coding update.
