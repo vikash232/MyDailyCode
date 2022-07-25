@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: "webpod"
+  labels:
+    app: frontend
+    team: team2
+    region: IN
+    env: prod
+
+spec:
+  containers:
+  - name: "webc1"
+    image: "vimal13/apache-webserver-php"

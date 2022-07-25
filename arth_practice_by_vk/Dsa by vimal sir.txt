@@ -1,0 +1,14 @@
+Class 1
+
+Data structure
+
+Entire concept of DSA is to save space(memory) and time(CPU).
+
+Oraganizing the data is important to things to go smooth.
+
+The way of organizing the date in many ways or many option by some kind of picture is called Graph.
+
+Graph is type of DataStructure.
+
+Linked list is one type of DataStructure add when needed.
+
