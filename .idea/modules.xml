@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/week3/Array Basic/Array Basic.iml" filepath="$PROJECT_DIR$/Kodnest_code/week3/Array Basic/Array Basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/week2/Datatypes/Datatypes.iml" filepath="$PROJECT_DIR$/Kodnest_code/week2/Datatypes/Datatypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_code/Java_Classes/Java_ArrayList/Java_ArrayList.iml" filepath="$PROJECT_DIR$/java_code/Java_Classes/Java_ArrayList/Java_ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_code/Java_Classes/Java_Classes.iml" filepath="$PROJECT_DIR$/java_code/Java_Classes/Java_Classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_code/Java_File_Handling/Java_Create/Java_Create.iml" filepath="$PROJECT_DIR$/java_code/Java_File_Handling/Java_Create/Java_Create.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_code/Java_Classes/Java_Date/Java_Date.iml" filepath="$PROJECT_DIR$/java_code/Java_Classes/Java_Date/Java_Date.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_code/Java_Classes/Java_Enums/Java_Enums.iml" filepath="$PROJECT_DIR$/java_code/Java_Classes/Java_Enums/Java_Enums.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_code/Java_Classes/Java_Exceptions/Java_Exceptions.iml" filepath="$PROJECT_DIR$/java_code/Java_Classes/Java_Exceptions/Java_Exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_code/Java_File_Handling/Java_File_Handling.iml" filepath="$PROJECT_DIR$/java_code/Java_File_Handling/Java_File_Handling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_code/Java_Methods/Java_Methods.iml" filepath="$PROJECT_DIR$/java_code/Java_Methods/Java_Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_code/Java_Classes/Java_Modifiers/Java_Modifiers.iml" filepath="$PROJECT_DIR$/java_code/Java_Classes/Java_Modifiers/Java_Modifiers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_code/Java_Tutorial/Java_Tutorial.iml" filepath="$PROJECT_DIR$/java_code/Java_Tutorial/Java_Tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/Kodnest_code.iml" filepath="$PROJECT_DIR$/Kodnest_code/Kodnest_code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MyDailyCode.iml" filepath="$PROJECT_DIR$/.idea/MyDailyCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/week3/july_array/july_array.iml" filepath="$PROJECT_DIR$/Kodnest_code/week3/july_array/july_array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/week2/object_creation/object_creation.iml" filepath="$PROJECT_DIR$/Kodnest_code/week2/object_creation/object_creation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pepcoding/patterns/patterns.iml" filepath="$PROJECT_DIR$/pepcoding/patterns/patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pepcoding/pepcoding.iml" filepath="$PROJECT_DIR$/pepcoding/pepcoding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/week3/july_array/remove_code_redundancy_from_array/remove_code_redundancy_from_array.iml" filepath="$PROJECT_DIR$/Kodnest_code/week3/july_array/remove_code_redundancy_from_array/remove_code_redundancy_from_array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/week4/sorting/sorting.iml" filepath="$PROJECT_DIR$/Kodnest_code/week4/sorting/sorting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/week4/string/string.iml" filepath="$PROJECT_DIR$/Kodnest_code/week4/string/string.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/week2/week2.iml" filepath="$PROJECT_DIR$/Kodnest_code/week2/week2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/week3/week3.iml" filepath="$PROJECT_DIR$/Kodnest_code/week3/week3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/week4/week4.iml" filepath="$PROJECT_DIR$/Kodnest_code/week4/week4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kodnest_code/week5/week5.iml" filepath="$PROJECT_DIR$/Kodnest_code/week5/week5.iml" />
+    </modules>
+  </component>
+</project>
