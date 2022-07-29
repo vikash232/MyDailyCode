@@ -1,0 +1,20 @@
+#It is rs with equality based selectors
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myweb-rs
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      env: prod
+  template:
+    metadata:
+      name: "webpod"
+      labels:
+        env: prod
+
+    spec:
+      containers:
+      - name: c00
+        image: vimal13/apache-webserver-php:v1

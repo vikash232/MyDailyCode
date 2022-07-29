@@ -1,0 +1,10 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: standard
+provisioner: kubernetes.io/worker-hostpath
+reclaimPolicy: Delete 
+allowVolumeExpansion: true
+mountOptions:
+  - debug
+volumeBindingMode: Immediate
