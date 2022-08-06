@@ -12,7 +12,6 @@ public class CWH_05_TakingInput {
         int sum = a + b;
         System.out.println("The sum of these number is");
         System.out.println(sum);
-
     }
 
 
