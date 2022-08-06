@@ -17,7 +17,7 @@ the contents into the array.
 public class Jagged2 {
     public static void main{
         Scanner scan = new Scanner(System.in);
-     System.out.println("Enter 1st Dimension length");
+        System.out.println("Enter 1st Dimension length");
         int len1 = scan.nextInt();
         int[][] arr1 = new int[len1][];
 
