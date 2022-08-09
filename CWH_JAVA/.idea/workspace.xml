@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c720f78-16a2-4ccf-ae0d-e47a40820daf" name="Changes" comment="done some changes">
-      <change beforePath="$PROJECT_DIR$/../arth_practice_by_vk/ARTH_Codes" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/cwh_13_strings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Application.CWH_Ch2_Operators">
+  <component name="RunManager" selected="Application.cwh_13_strings">
     <configuration name="CWH_04literal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.CWH_04literal" />
       <module name="CWH_JAVA" />
@@ -149,30 +150,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+    <configuration name="cwh_13_strings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.cwh_13_strings" />
       <module name="CWH_JAVA" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.CWH_04literal" />
       <item itemvalue="Application.CWH_05_TakingInput" />
       <item itemvalue="Application.CWH_Ch1_PS" />
       <item itemvalue="Application.CWH_Ch2_Operators" />
+      <item itemvalue="Application.cwh_13_strings" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.cwh_13_strings" />
         <item itemvalue="Application.CWH_Ch2_Operators" />
         <item itemvalue="Application.CWH_Ch1_PS" />
         <item itemvalue="Application.CWH_05_TakingInput" />
         <item itemvalue="Application.CWH_04literal" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659799744735</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="done some changes">
+      <created>1659894746075</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659894746075</updated>
+    </task>
+    <task id="LOCAL-00003" summary="done some changes">
+      <created>1659894780493</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659894780493</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
