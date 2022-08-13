@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c720f78-16a2-4ccf-ae0d-e47a40820daf" name="Changes" comment="done some changes">
+      <change afterPath="$PROJECT_DIR$/src/com/company/cwh_14_string_methods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,21 +96,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.cwh_13_strings">
-    <configuration name="CWH_04literal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.CWH_04literal" />
-      <module name="CWH_JAVA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.cwh_14_string_methods">
     <configuration name="CWH_05_TakingInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.CWH_05_TakingInput" />
       <module name="CWH_JAVA" />
@@ -162,20 +152,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="cwh_14_string_methods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.cwh_14_string_methods" />
+      <module name="CWH_JAVA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.CWH_04literal" />
       <item itemvalue="Application.CWH_05_TakingInput" />
       <item itemvalue="Application.CWH_Ch1_PS" />
       <item itemvalue="Application.CWH_Ch2_Operators" />
       <item itemvalue="Application.cwh_13_strings" />
+      <item itemvalue="Application.cwh_14_string_methods" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.cwh_14_string_methods" />
         <item itemvalue="Application.cwh_13_strings" />
         <item itemvalue="Application.CWH_Ch2_Operators" />
         <item itemvalue="Application.CWH_Ch1_PS" />
         <item itemvalue="Application.CWH_05_TakingInput" />
-        <item itemvalue="Application.CWH_04literal" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660012725272</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="done some changes">
+      <created>1660232098876</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660232098876</updated>
+    </task>
+    <task id="LOCAL-00006" summary="done some changes">
+      <created>1660232105139</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660232105139</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
