@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c720f78-16a2-4ccf-ae0d-e47a40820daf" name="Changes" comment="done some changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CWH_JAVA/com/company/cwh_14_string_methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CWH_JAVA/com/company/cwh_14_string_methods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/cwh_14_string_methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/cwh_14_string_methods.java" afterDir="false" />
-    </list>
+    <list default="true" id="7c720f78-16a2-4ccf-ae0d-e47a40820daf" name="Changes" comment="done some changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660396801905</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="done some changes">
+      <created>1660397227749</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660397227749</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
