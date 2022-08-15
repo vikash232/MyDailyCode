@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c720f78-16a2-4ccf-ae0d-e47a40820daf" name="Changes" comment="done some changes">
-      <change afterPath="$PROJECT_DIR$/src/com/company/cwh_16_conditionals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CWH_JAVA/com/company/cwh_14_string_methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CWH_JAVA/com/company/cwh_14_string_methods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/cwh_14_string_methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/cwh_14_string_methods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.cwh_16_conditionals">
+  <component name="RunManager" selected="Application.cwh_14_string_methods">
+    <configuration name="CWH_05_TakingInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.CWH_05_TakingInput" />
+      <module name="CWH_JAVA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CWH_Ch1_PS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.CWH_Ch1_PS" />
       <module name="CWH_JAVA" />
@@ -153,33 +166,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cwh_16_conditionals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.cwh_16_conditionals" />
-      <module name="CWH_JAVA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.CWH_05_TakingInput" />
       <item itemvalue="Application.CWH_Ch1_PS" />
       <item itemvalue="Application.CWH_Ch2_Operators" />
       <item itemvalue="Application.cwh_13_strings" />
       <item itemvalue="Application.cwh_14_string_methods" />
-      <item itemvalue="Application.cwh_16_conditionals" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.cwh_16_conditionals" />
         <item itemvalue="Application.cwh_14_string_methods" />
         <item itemvalue="Application.cwh_13_strings" />
         <item itemvalue="Application.CWH_Ch2_Operators" />
         <item itemvalue="Application.CWH_Ch1_PS" />
+        <item itemvalue="Application.CWH_05_TakingInput" />
       </list>
     </recent_temporary>
   </component>
@@ -248,14 +248,7 @@
       <option name="project" value="LOCAL" />
       <updated>1660396801905</updated>
     </task>
-    <task id="LOCAL-00009" summary="done some changes">
-      <created>1660397227749</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1660397227749</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
