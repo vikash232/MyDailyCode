@@ -1,0 +1,3 @@
+dvd_dir: "/dvd"
+document_root: "/var/www/html"
+port_num: "8080"

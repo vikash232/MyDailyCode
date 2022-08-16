@@ -1,0 +1,3 @@
+dvd_dir: "/dvd"
+apache_port: "81"
+ssh_port: "2222"

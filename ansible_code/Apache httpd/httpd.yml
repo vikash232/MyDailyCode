@@ -1,0 +1,79 @@
+- hosts: all
+  vars_files:
+    - httpd_vars.yml
+  tasks:
+    - name: "Creating directory"
+      file:
+        state: directory
+        path: "{{ dvd_dir }}"
+
+    - name: "Mounting dvd"
+      mount:
+        src: "/dev/cdrom"
+        path: "{{ dvd_dir }}"
+        state: mounted
+        fstype: iso9660
+
+    - name: "Configuring Yum"
+      yum_repository:
+        baseurl: "{{ dvd_dir }}/AppStream"
+        name: "dvd1"
+        description: "AppStream dvd"
+        gpgcheck: no
+
+    - name: "Configuring Yum"
+      yum_repository:
+        baseurl: "{{ dvd_dir }}/BaseOS"
+        name: "dvd2"
+        description: "BaseOS dvd"
+        gpgcheck: no
+
+    - name: "Installing package httpd"
+      package:
+        name: "httpd"
+        state: present
+
+    - name: "Creating document root"
+      file:
+        state: directory
+        path: "{{ document_root }}"
+
+    - name: "Configure apache httpd"
+      template:
+        dest: "/etc/httpd/conf.d/apache.conf"
+        src: "apache.conf"
+      notify:
+      -     Restart service
+
+    - name: "Creating webpage"
+      copy:
+        dest: "{{ document_root }}/index.html"
+        content: "Welcome to ne my page location!!"
+
+    - name: "Starting services"
+      service:
+        name: "httpd"
+        state: started
+        enabled: yes
+
+
+    - name: "Adding firewall rule"
+      firewalld:
+        port: "{{ port_num }}/tcp"
+        state: enabled
+        permanent: yes
+        immediate: yes
+
+  
+  handlers:
+  - name: Restart service
+    service:
+      name: "httpd"
+      state: restarted
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+namenode_dir: "/nn"
+datanode_dir: "/dn"
+namenode_ip: "192.168.43.67"
+replication_factor: ""
+block_size: ""

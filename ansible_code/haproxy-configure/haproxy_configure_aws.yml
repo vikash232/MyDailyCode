@@ -1,0 +1,89 @@
+- hosts: webserver
+  become: true
+  become_user: root
+  vars:
+  - dvd_dir : "/dvd"
+  tasks:
+  - name: "Installing package httpd"
+    package:
+      name: "httpd"
+      state: present
+
+  - name: "Creating webpage"
+    copy:
+      dest: "/var/www/html/lb.html"
+      content: "Loadbalancer !!"
+
+  - name: "Starting services"
+    service:
+      name: "httpd"
+      state: started
+      enabled: yes
+
+
+- hosts: loadbalancer
+  become: true
+  become_user: root
+  tasks:
+  - name: "Installing package haproxy"
+    package:
+      name: "haproxy"
+      state: present
+
+  - name: "Configuring haproxy"
+    template:
+      dest: "/etc/haproxy/haproxy.cfg"
+      src: "haproxy.cfg.j2"
+    notify:
+    - Restart service haproxy
+
+  - name: "Starting services"
+    service:
+      name: "haproxy"
+      state: started
+      enabled: yes
+
+
+
+  handlers:
+  - name: Restart service haproxy
+    service:
+      name: "haproxy"
+      state: restarted
+
+
+- hosts: localhost
+  tasks:
+  - name: "Adding security group rule for haproxy"
+    ec2_group:
+      aws_access_key: A**************D
+      aws_secret_key: u*******************************x
+      region: "ap-south-1"
+      vpc_id: "vpc-c62ecead"
+      name: "launch-wizard-2"
+      description: "Haproxysg"
+      rules:
+      - proto: tcp
+        from_port: 8080
+        to_port: 8080
+        cidr_ip: 0.0.0.0/0
+        rule_desc: "Rule for haproxy"
+ 
+  - name: "Adding firewall rule for httpd"
+    ec2_group:
+      aws_access_key: A**************D
+      aws_secret_key: u*******************************x
+      region: "ap-south-1"
+      vpc_id: "vpc-c62ecead"
+      name: "launch-wizard-3"
+      description: "httpdsg"
+      rules:
+      - proto: tcp
+        from_port: 80
+        to_port: 80
+        cidr_ip: 0.0.0.0/0
+        rule_desc: "Rule fot httpd"
+
+
+
+

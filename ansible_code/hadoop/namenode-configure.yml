@@ -1,0 +1,196 @@
+#namenode configure
+- hosts: namenode
+  vars_files:
+    - hadoop_vars.yml
+
+  tasks:
+    - name: "Copy Hadoop Software and jdk"
+      copy:
+        dest: "/root"
+        src: "/root/hadoop_software"
+
+    - name: "Install jdk"
+      yum:
+        name: "/root/hadoop_software/jdk-8u171-linux-x64.rpm"
+        state: present
+        disable_gpg_check: yes
+
+    - name: "Check if hadoop is installed"
+      command: 
+        cmd: "rpm -q hadoop"
+      register: rpm_check
+      failed_when: rpm_check.rc == 2
+
+
+    - name: "Install hadoop"
+      shell: 
+        cmd: "rpm -i /root/hadoop_software/hadoop-1.2.1-1.x86_64.rpm --force"
+      when: rpm_check.stdout_lines != "package hadoop is not installed"
+
+
+    - name: "Create namenode directory"
+      file:
+        state: directory
+        path: "{{ namenode_dir }}"
+
+    - name: "Configure hdfs-site.xml"
+      template: 
+        dest: "/etc/hadoop/hdfs-site.xml"
+        src: "/root/namenode-hdfs-site.xml"
+
+
+    - name: "Configure core-site.xml"
+      template: 
+        dest: "/etc/hadoop/core-site.xml"
+        src: "/root/namenode-core-site.xml"
+
+    
+    - name: "Stop namenode if already running"
+      command: "hadoop-daemon.sh stop namenode"
+
+    - name: "Format namenode"
+      shell:
+        cmd: "echo Y | hadoop namenode -format"
+
+    - name: "Start Namenode"
+      command: "hadoop-daemon.sh start namenode"
+
+    - name: "Allow port 9001 in firewall"
+      firewalld:
+        port: "9001/tcp"
+        state: enabled
+        permanent: yes
+        immediate: yes
+
+
+#datanode configure
+- hosts: datanode
+  vars_files:
+    - hadoop_vars.yml
+
+  tasks:
+    - name: "Copy Hadoop Software and jdk"
+      copy:
+        dest: "/root"
+        src: "/root/hadoop_software"
+
+    - name: "Install jdk"
+      yum:
+        name: "/root/hadoop_software/jdk-8u171-linux-x64.rpm"
+        state: present
+        disable_gpg_check: yes
+
+    - name: "Check if hadoop is installed"
+      command: 
+        cmd: "rpm -q hadoop"
+      register: rpm_check
+      failed_when: rpm_check == 2
+
+
+    - name: "Install hadoop"
+      shell: 
+        cmd: "rpm -i /root/hadoop_software/hadoop-1.2.1-1.x86_64.rpm --force"
+      when: rpm_check.stdout_lines != "package hadoop is not installed"
+
+
+    - name: "Create datanode directory"
+      file:
+        state: directory
+        path: "{{ datanode_dir }}"
+
+    - name: "Configure hdfs-site.xml"
+      template: 
+        dest: "/etc/hadoop/hdfs-site.xml"
+        src: "/root/datanode-hdfs-site.xml"
+        
+
+    - name: "Configure core-site.xml"
+      template: 
+        dest: "/etc/hadoop/core-site.xml"
+        src: "/root/datanode-core-site.xml"
+
+    
+    - name: "Stop datanode if already running"
+      command: "hadoop-daemon.sh stop datanode"
+
+
+    - name: "Start datanode"
+      command: "hadoop-daemon.sh start datanode"
+
+
+#client-configure
+- hosts: client
+  vars_files:
+    - hadoop_vars.yml
+
+  tasks:
+    - name: "Copy Hadoop Software and jdk"
+      copy:
+        dest: "/root"
+        src: "/root/hadoop_software"
+
+    - name: "Install jdk"
+      yum:
+        name: "/root/hadoop_software/jdk-8u171-linux-x64.rpm"
+        state: present
+        disable_gpg_check: yes
+
+    - name: "Check if hadoop is installed"
+      command: 
+        cmd: "rpm -q hadoop"
+      register: rpm_check
+
+
+    - name: "Install hadoop"
+      shell: 
+        cmd: "rpm -i /root/hadoop_software/hadoop-1.2.1-1.x86_64.rpm --force"
+      when: rpm_check.rc != 0
+
+
+    - name: "Configure hdfs-site.xml"
+      template: 
+        dest: "/etc/hadoop/hdfs-site.xml"
+        src: "/root/client-hdfs-site.xml"
+
+
+    - name: "Configure core-site.xml"
+      template: 
+        dest: "/etc/hadoop/core-site.xml"
+        src: "/root/datanode-core-site.xml"
+
+    
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+      
+

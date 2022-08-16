@@ -1,0 +1,91 @@
+- hosts: webserver
+  vars:
+  - dvd_dir : "/dvd"
+  tasks:
+  - name: "Creating directory"
+    file:
+      state: directory
+      path: "{{ dvd_dir }}"
+
+  - name: "Mounting dvd"
+    mount:
+      src: "/dev/cdrom"
+      path: "{{ dvd_dir }}"
+      state: mounted
+      fstype: iso9660
+
+  - name: "Configuring Yum"
+    yum_repository:
+      baseurl: "{{ dvd_dir }}/AppStream"
+      name: "dvd1"
+      description: "AppStream dvd"
+      gpgcheck: no
+
+  - name: "Configuring Yum"
+    yum_repository:
+      baseurl: "{{ dvd_dir }}/BaseOS"
+      name: "dvd2"
+      description: "BaseOS dvd"
+      gpgcheck: no
+  - name: "Installing package httpd"
+    package:
+      name: "httpd"
+      state: present
+
+  - name: "Creating webpage"
+    copy:
+      dest: "/var/www/html/lb.html"
+      content: "Loadbalancer !!"
+
+  - name: "Starting services"
+    service:
+      name: "httpd"
+      state: started
+      enabled: yes
+
+  - name: "Adding firewall rule for httpd"
+    firewalld:
+      port: "80/tcp"
+      state: enabled
+      permanent: yes
+      immediate: yes
+
+
+- hosts: loadbalancer
+  tasks:
+  - name: "Installing package haproxy"
+    package:
+      name: "haproxy"
+      state: present
+
+  - name: "Configuring haproxy"
+    template:
+      dest: "/etc/haproxy/haproxy.cfg"
+      src: "haproxy.cfg.j2"
+    notify:
+    - Restart service haproxy
+
+  - name: "Starting services"
+    service:
+      name: "haproxy"
+      state: started
+      enabled: yes
+
+  - name: "Adding firewall rule for httpd"
+    firewalld:
+      port: "8080/tcp"
+      state: enabled
+      permanent: yes
+      immediate: yes
+
+
+  handlers:
+  - name: Restart service haproxy
+    service:
+      name: "haproxy"
+      state: restarted
+
+
+
+
+
