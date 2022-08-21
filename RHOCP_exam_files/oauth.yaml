@@ -1,0 +1,8 @@
+spec:
+	identityProviders:
+	- htpasswd:
+		fileData:	
+			name: ex280-pass
+	  type: HTPasswd
+	 mappingMethod: claim	
+	name: ex280-idp-pass

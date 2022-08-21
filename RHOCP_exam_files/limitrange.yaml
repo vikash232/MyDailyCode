@@ -1,0 +1,25 @@
+apiVersion:  v1
+kind:  "LimitRange"
+namespace: project6
+metadata:
+	name: limits
+spec:
+	limits:	
+	- type: "Pod"
+	  max:
+		cpu: "500m"
+		memory: "300Mi"
+	  min:
+		cpu: "50m"
+		memory: "20Mi"
+
+	- type: "Container"
+	  max: 
+		cpu: "500m"
+		memory: "300Mi"
+	min: 
+		cpu: "50m"
+		memory: "20Mi"
+         defaultRequests:
+		cpu: "100m"
+		memory: "100Mi"
